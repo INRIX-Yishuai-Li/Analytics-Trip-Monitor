@@ -20,7 +20,7 @@ serviceUserHome="/home/$serviceUser"                                            
 maxShutdownTime=15                                                              # maximum number of seconds to wait for the daemon to terminate normally
 pidFile="/var/run/$serviceNameLo.pid"                                           # name of PID file (PID = process ID number)
 javaCommand="java"                                                             # name of the Java launcher without the path
-javaArgs="-jar $serviceName.jar $YML_ENV"                              # arguments for Java launcher
+javaArgs="-jar tripMetricsMonitor.jar $YML_ENV"                              # arguments for Java launcher
 javaCommandLine="$JAVA_HOME$javaCommand $javaArgs"                              # command line to start the Java service application
 javaCommandLineKeyword="trips-metrics-monitoring"                                         # a keyword that occurs on the commandline, used to detect an already running service process and to distinguish it from others
 
